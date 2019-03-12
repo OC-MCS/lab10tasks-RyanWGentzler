@@ -1,7 +1,17 @@
 #pragma once
-class ProductionWorker
+#include "Employee.h"
+#include <string>
+
+class ProductionWorker : public Employee
 {
+private:
+	int shift;
+	double pay;
 public:
-	ProductionWorker();
+	ProductionWorker(string, string, int, int, double);
+	void setShift(int);
+	int getShift();
+	void setPay(double);
+	double getPay();
 };
 
