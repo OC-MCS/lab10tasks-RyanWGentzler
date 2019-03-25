@@ -2,10 +2,10 @@
 #include "Ship.h"
 using namespace std;
 
-Ship::Ship()
+Ship::Ship(string name, string year)
 {
-	name = "";
-	year = "0";
+	this->name = name;
+	this->year = year;
 }
 
 string Ship::getName()

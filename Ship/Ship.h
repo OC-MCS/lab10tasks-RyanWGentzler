@@ -8,7 +8,7 @@ private:
 	string name;
 	string year;
 public:
-	Ship();
+	Ship(string, string);
 	string getName();
 	string getYear();
 	void setName(string);
